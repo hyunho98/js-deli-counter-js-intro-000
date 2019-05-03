@@ -15,3 +15,13 @@ function nowServing(katzDeliLine) {
     return "There is nobody waiting to be served!";
   }
 }
+
+function currentLine(katzDeliLine) {
+  var line = "The line is currently : ";
+
+  for (var i = 0; i < katzDeliLine.length; i++) {
+    line = line + (i+1) + ". " + katzDeliLine[i] + " ";
+  }
+
+  return line;
+}
